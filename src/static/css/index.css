@@ -1,0 +1,172 @@
+html {
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #1a1616;
+  color: white;
+}
+
+.index {
+  background-color: red;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: rgb(122, 17, 184);
+}
+
+nav > .container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex: 2;
+}
+
+.logo {
+  flex: 1;
+}
+
+nav a {
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+nav a:link,
+nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+  background-color: rgb(158, 13, 158);
+}
+
+/* ------------------------------- Formulaire ------------------------------- */
+
+.form-group {
+  padding: 0.5rem 0;
+}
+
+.form-group label {
+  display: inline-block;
+  min-width: 8.75rem;
+  vertical-align: top;
+}
+
+.form-actions {
+  padding: 1.2rem 0 1.2rem 8.75rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem 0.6rem;
+  border: thin solid #c0c0c0;
+  border-radius: 5px;
+}
+
+button {
+  background: rgb(122, 17, 184);
+  border: thin solid #242424;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.75rem 3.3rem;
+}
+
+button:hover {
+  background: rgb(158, 13, 158);
+}
+
+button:active {
+  background-color: rgb(158, 13, 158)#1a1a1a;
+}
+
+/* ---------------------------------- Chat ---------------------------------- */
+
+#chat-app {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.chat-users {
+  flex: 1;
+}
+
+.chat-users h2 {
+  margin: 0;
+}
+
+.chat-users ul {
+  margin: 0;
+  list-style-type: square;
+}
+
+.chat-users li > span {
+  font-weight: bold;
+  margin: 0 0.25rem;
+  font-size: 0.8em;
+  border-radius: 0.1rem;
+  padding: 0.05rem 0.2em;
+  display: inline-block;
+}
+
+.chatbox-area {
+  flex: 2;
+}
+
+.chatbox-messages {
+  margin-bottom: 4.5rem;
+  margin-right: 1rem;
+  max-height: calc(100vh - 220px);
+  overflow: auto;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.msg-date {
+  background-color: #f0f0f0;
+  color: rgb(116, 116, 116);
+  border-radius: 0.1rem;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 0 0.25rem;
+  padding: 0.05rem 0.25rem;
+}
+
+.msg-user {
+  font-weight: bold;
+  margin: 0 0.25rem;
+  font-size: 0.8em;
+  border-radius: 0.1rem;
+  padding: 0.05rem 0.25rem;
+}
+
+.chatbox-form {
+  position: fixed;
+  bottom: 0;
+  width: 60rem;
+  padding: 1rem 0;
+}
+
+.chatbox-form input[type="text"] {
+  display: block;
+  font-size: 1.4em;
+  width: 100%;
+}
